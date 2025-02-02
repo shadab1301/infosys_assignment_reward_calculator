@@ -80,6 +80,7 @@ npm run test
 npm run build
 ```
 **Application Screenshots**
+![Application Running State](./assets/running_state.png)
 
 **Application Running State**
 
