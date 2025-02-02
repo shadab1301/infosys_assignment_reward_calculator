@@ -80,7 +80,8 @@ npm run test
 npm run build
 ```
 **Application Screenshots**
-![Application Running State](./assets/error_state.png)
+![Application Running State](https://github.com/shadab1301/infosys_assignment_reward_calculator/blob/main/public/assets/running_state.png)
+
 
 **Application Running State**
 
