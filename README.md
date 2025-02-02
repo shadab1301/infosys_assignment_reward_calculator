@@ -16,7 +16,7 @@ Assumption:- The record could be of many years so displaying the records of the 
 
 
 ```javascript
-https://github.com/vibhavawasthi/Assignment_Infosys
+https://github.com/shadab1301/infosys_assignment_reward_calculator
 ```
 **Install Dependencies**
 ```javascript
