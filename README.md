@@ -79,11 +79,13 @@ npm run test
 ```javascript
 npm run build
 ```
-**Application Screenshots**
-![Application Running State](https://github.com/shadab1301/infosys_assignment_reward_calculator/blob/main/public/assets/running_state.png)
-
-
+## Application Screenshots
 **Application Running State**
+![Application Running State](https://github.com/shadab1301/infosys_assignment_reward_calculator/blob/main/public/assets/running_state.png)
+![Application Running State](https://github.com/shadab1301/infosys_assignment_reward_calculator/blob/main/public/assets/running_state_2.png)
+![Application Running State](https://github.com/shadab1301/infosys_assignment_reward_calculator/blob/main/public/assets/running_state_3.png)
+
+
 
 (Include relevant screenshots here)
 
