@@ -32,7 +32,12 @@ npm run test
 ```
 **The test cases file can be found at:**
 ```javascript
-/workspaces/Assign/src/RewardPointsCaluclator/tests/testCases.test.js
+
+/infosys_assignment_reward_calculator/src/testCases/rewardCalculator.test.js
+
+/infosys_assignment_reward_calculator/src/testCases/fetchTransactions.test.js
+
+
 ```
 **Test Cases**
 
