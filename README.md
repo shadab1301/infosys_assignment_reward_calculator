@@ -85,9 +85,11 @@ npm run build
 ![Application Running State](https://github.com/shadab1301/infosys_assignment_reward_calculator/blob/main/public/assets/running_state_2.png)
 ![Application Running State](https://github.com/shadab1301/infosys_assignment_reward_calculator/blob/main/public/assets/running_state_3.png)
 
+**Application Loding State**
+![Application Running State](https://github.com/shadab1301/infosys_assignment_reward_calculator/blob/main/public/assets/loading_state.png)
 
-
-(Include relevant screenshots here)
+**Application Loding State**
+![Application Running State](https://github.com/shadab1301/infosys_assignment_reward_calculator/blob/main/public/assets/error_state.png)
 
 Assumption
 
