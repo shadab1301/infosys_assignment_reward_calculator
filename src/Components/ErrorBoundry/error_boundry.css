@@ -1,0 +1,14 @@
+.fallback_container{
+    width: 100%;
+    height: 95vh;
+    background-color: rgb(93, 98, 103);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fallback_content{
+    padding: 40px 20px;
+    background-color: #e58282;
+    width: 50%;
+    text-align: center;
+}

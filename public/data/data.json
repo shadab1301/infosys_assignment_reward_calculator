@@ -1,0 +1,79 @@
+[
+  {
+    "id": 1,
+    "customerName": "Pranjal",
+    "purchaseDate": "2025-01-15",
+    "purchaseProduct": "Game",
+    "price": 100.2
+  },
+  {
+    "id": 2,
+    "customerName": "Ashraf",
+    "purchaseDate": "2024-12-10",
+    "purchaseProduct": "Notebook",
+    "price": 100.4
+  },
+  {
+    "id": 3,
+    "customerName": "Shivam",
+    "purchaseDate": "2025-01-05",
+    "purchaseProduct": "Headphone",
+    "price": 50.9
+  },
+  {
+    "id": 4,
+    "customerName": "Madhulika",
+    "purchaseDate": "2024-10-25",
+    "purchaseProduct": "Chocolate",
+    "price": 60
+  },
+  {
+    "id": 5,
+    "customerName": "Madhulika",
+    "purchaseDate": "2025-01-15",
+    "purchaseProduct": "Mobile",
+    "price": 200
+  },
+  {
+    "id": 6,
+    "customerName": "Shivam",
+    "purchaseDate": "2025-01-20",
+    "purchaseProduct": "Adapter",
+    "price": 90
+  },
+  {
+    "id": 7,
+    "customerName": "Pranjal",
+    "purchaseDate": "2024-12-22",
+    "purchaseProduct": "Battery",
+    "price": 50
+  },
+  {
+    "id": 8,
+    "customerName": "Riya",
+    "purchaseDate": "2024-11-18",
+    "purchaseProduct": "Bottle",
+    "price": 11
+  },
+  {
+    "id": 9,
+    "customerName": "Ashraf",
+    "purchaseDate": "2023-12-15",
+    "purchaseProduct": "Bottle",
+    "price": 110
+  },
+  {
+    "id": 10,
+    "customerName": "Madhulika",
+    "purchaseDate": "2022-05-07",
+    "purchaseProduct": "Bottle",
+    "price": 119
+  },
+  {
+    "id": 11,
+    "customerName": "Riya",
+    "purchaseDate": "2024-08-06",
+    "purchaseProduct": "Bottle",
+    "price": 140
+  }
+]
