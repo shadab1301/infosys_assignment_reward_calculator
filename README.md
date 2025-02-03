@@ -43,11 +43,8 @@ npm run test
 
 **calculatePoints function**
 ```javascript
-✅ Should handle negative amount
 
 ✅ Should handle decimal amount
-
-✅ Should handle large amounts like 1,000,000
 
 ✅ Should calculate points correctly for amounts over $100
 
