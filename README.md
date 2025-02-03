@@ -16,7 +16,7 @@ Given a record of every transaction during a three month period, calculate the r
 
 
 ```javascript
-https://github.com/shadab1301/infosys_assignment_reward_calculator
+git clone https://github.com/shadab1301/infosys_assignment_reward_calculator
 ```
 **Install Dependencies**
 ```javascript
