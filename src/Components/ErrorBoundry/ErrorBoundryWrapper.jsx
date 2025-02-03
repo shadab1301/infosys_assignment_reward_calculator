@@ -22,7 +22,7 @@ export default class ErrorBoundryWrapper extends Component {
 const FallbackScreen=()=>{
   return<>
     <div className="fallback_container">
-        <h3 className="fallback_content">Something went wrong Please try later...</h3>
+        <h3 className="fallback_content">Something went wrong Please try after some time...</h3>
     </div>
   </>
 }
