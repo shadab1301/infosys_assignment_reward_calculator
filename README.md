@@ -10,7 +10,7 @@ A customer receives 2 points for every dollar spent over $100 in each transactio
 Given a record of every transaction during a three month period, calculate the reward points earned for each customer per month and total.  
 
 
-## Running the Project
+## Steps to Run the Project
 
 ### Clone the project from github repository
 
