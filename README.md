@@ -41,7 +41,7 @@ npm run test
 ```
 **Test Cases**
 
-**calculatePoints function**
+**calculateRewardPoints function**
 ```javascript
 
 ✅ Should handle decimal amount
@@ -54,12 +54,7 @@ npm run test
 
 ✅ Should handle amounts less than $50
 ```
-**processTransactions function**
-```javascript
-✅ Should process transactions and calculate points correctly
 
-✅ Should handle an empty transactions array
-```
 **fetchTransactions**
 ```javascript
 ✅ Should fetch transaction data successfully
