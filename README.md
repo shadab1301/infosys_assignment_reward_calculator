@@ -2,15 +2,15 @@
 
 ## Project Overview
 
-A retailer offers a rewards program to its customers, awarding points based on each recorded purchase.
+A retailer offers a rewards program to its customers, awarding points based on each recorded purchase.   
+   
+A customer receives 2 points for every dollar spent over $100 in each transaction, plus 1 point for every dollar spent between $50 and $100 in each transaction.  
+(e.g. a $120 purchase = 2x$20 + 1x$50 = 90 points).  
 
-A customer receives 2 points for every dollar spent over $100 in each transaction, plus 1 point for every dollar spent between $50 and $100 in each transaction.
+Given a record of every transaction during a three month period, calculate the reward points earned for each customer per month and total.  
 
-(e.g. a $120 purchase = 2x$20 + 1x$50 = 90 points).   Given a record of every transaction during a three month period, calculate the reward points earned for each customer per month and total.
 
-Assumption:- The record could be of many years so displaying the records of the latest three months in descending order and combined points as per customer ID for the last three months.
-
-## Running the Project
+## Steps to Run the Project
 
 ### Clone the project from github repository
 
@@ -41,13 +41,10 @@ npm run test
 ```
 **Test Cases**
 
-**calculatePoints function**
+**calculateRewardPoints function**
 ```javascript
-✅ Should handle negative amount
 
 ✅ Should handle decimal amount
-
-✅ Should handle large amounts like 1,000,000
 
 ✅ Should calculate points correctly for amounts over $100
 
@@ -57,12 +54,7 @@ npm run test
 
 ✅ Should handle amounts less than $50
 ```
-**processTransactions function**
-```javascript
-✅ Should process transactions and calculate points correctly
 
-✅ Should handle an empty transactions array
-```
 **fetchTransactions**
 ```javascript
 ✅ Should fetch transaction data successfully
@@ -79,11 +71,17 @@ npm run test
 ```javascript
 npm run build
 ```
-**Application Screenshots**
-
+## Application Screenshots
 **Application Running State**
+![Application Running State](https://github.com/shadab1301/infosys_assignment_reward_calculator/blob/main/public/assets/running_state.png)
+![Application Running State](https://github.com/shadab1301/infosys_assignment_reward_calculator/blob/main/public/assets/running_state_2.png)
+![Application Running State](https://github.com/shadab1301/infosys_assignment_reward_calculator/blob/main/public/assets/running_state_3.png)
 
-(Include relevant screenshots here)
+**Application Loding State**
+![Application Running State](https://github.com/shadab1301/infosys_assignment_reward_calculator/blob/main/public/assets/loading_state.png)
+
+**Application Loding State**
+![Application Running State](https://github.com/shadab1301/infosys_assignment_reward_calculator/blob/main/public/assets/error_state.png)
 
 Assumption
 
