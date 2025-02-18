@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { calculateRewardPoints } from "../utility/commanFn/calculateRewardPoints";
+import { calculateRewardPoints } from "../utility/commanFunctions/calculateRewardPoints";
 
 describe("RewardPoints calculation function", () => {
   it("should calculate reward points correctly for transaction less than $50", () => {

@@ -2,7 +2,7 @@ import React, { useEffect, useMemo, useState } from "react";
 import LoadingSpinner from "../Loader/loader";
 import { fetchTransactions } from "../../utility/services/apiService";
 import Tabs from "../Tabs/Tabs";
-import { transactionsWithRewardPoints } from "../../utility/commanFn/calculateRewardPoints";
+import { transactionsWithRewardPoints } from "../../utility/commanFunctions/calculateRewardPoints";
 import TransactionTable from "../Tables/TransactionTable";
 import MonthlyRewardTable from "../Tables/MonthlyBasisReward";
 import TotalRewardsTable from "../Tables/TotalRewardsTable";

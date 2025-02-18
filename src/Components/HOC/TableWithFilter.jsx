@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./tableWithFilter.css";
 import DateFilter from "../DateFilter/DateFilter";
-import { filterTransactionByDateRange } from "../../utility/commanFn/calculateRewardPoints";
+import { filterTransactionByDateRange } from "../../utility/commanFunctions/calculateRewardPoints";
 
 const withFilter = (WrappedComponent, title) => {
   return ({ transactions = [], ...props }) => {

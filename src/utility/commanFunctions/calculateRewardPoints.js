@@ -47,39 +47,52 @@ export const CalLastThreeMonthsData = (transactions = []) => {
 };
 
 export const monthlyRewardByEachCustomer = (transactions = []) => {
-  const groupByDateAndCustomername=transactions.reduce((acc,transaction)=>{
-    const {id,customerName,purchaseDate,price,rewardPoint}=transaction
-    let tranDate=new Date(purchaseDate)
-    const month=tranDate.toLocaleString("default",{ month: "short" })
-    const year=tranDate.getFullYear()
-    const key=`${month}_${year}`
-    if(!acc[key]) acc[key]={}
-    if(!acc[key][customerName]){
-      acc[key][customerName]={id,customerName,month,year,rewardPoint:0,totalTransaction:0,transactionCount:0}
+  const groupByDateAndCustomername = transactions.reduce((acc, transaction) => {
+    const { id, customerName, purchaseDate, price, rewardPoint } = transaction;
+    let tranDate = new Date(purchaseDate);
+    const month = tranDate.toLocaleString("default", { month: "short" });
+    const year = tranDate.getFullYear();
+    const key = `${month}_${year}`;
+    if (!acc[key]) acc[key] = {};
+    if (!acc[key][customerName]) {
+      acc[key][customerName] = {
+        id,
+        customerName,
+        month,
+        year,
+        rewardPoint: 0,
+        totalTransaction: 0,
+        transactionCount: 0,
+      };
     }
-    acc[key][customerName].rewardPoint += rewardPoint
-    acc[key][customerName].totalTransaction+= price
-    acc[key][customerName].transactionCount += 1
-    return acc
-  },{})
+    acc[key][customerName].rewardPoint += rewardPoint;
+    acc[key][customerName].totalTransaction += price;
+    acc[key][customerName].transactionCount += 1;
+    return acc;
+  }, {});
 
-  const formattedTransaction=Object.keys(groupByDateAndCustomername).reduce((acc,dateKey)=>{
-    const allCustomerInOneMonth=Object.keys(groupByDateAndCustomername[dateKey])
-    allCustomerInOneMonth.forEach((customer)=>{
-      acc.push(groupByDateAndCustomername[dateKey][customer])
-    })
-    return acc
-  },[])
-   return formattedTransaction
+  const formattedTransaction = Object.keys(groupByDateAndCustomername).reduce(
+    (acc, dateKey) => {
+      const allCustomerInOneMonth = Object.keys(
+        groupByDateAndCustomername[dateKey]
+      );
+      for (let i = 0; i < allCustomerInOneMonth.length; i++) {
+        acc.push(groupByDateAndCustomername[dateKey][allCustomerInOneMonth[i]]);
+      }
+      return acc;
+    },
+    []
+  );
+  return formattedTransaction;
 };
 
-export const filterTransactionByDateRange=(data, dateRange)=> {
-  if(!dateRange) return data
-  if(!dateRange?.startDate || !dateRange?.endDate ) return data
+export const filterTransactionByDateRange = (data, dateRange) => {
+  if (!dateRange) return data;
+  if (!dateRange?.startDate || !dateRange?.endDate) return data;
   const start = new Date(dateRange.startDate);
   const end = new Date(dateRange.endDate);
-  return data.filter(item => {
-      const purchaseDate = new Date(item.purchaseDate);
-      return purchaseDate >= start && purchaseDate <= end;
+  return data.filter((item) => {
+    const purchaseDate = new Date(item.purchaseDate);
+    return purchaseDate >= start && purchaseDate <= end;
   });
-}
+};

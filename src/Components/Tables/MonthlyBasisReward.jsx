@@ -1,4 +1,4 @@
-import { monthlyRewardByEachCustomer } from "../../utility/commanFn/calculateRewardPoints";
+import { monthlyRewardByEachCustomer } from "../../utility/commanFunctions/calculateRewardPoints";
 import withFilter from "../HOC/TableWithFilter"
 const MonthlyTable = ({ transactions = [] }) => {
   const monthlyTransaction = monthlyRewardByEachCustomer(transactions);

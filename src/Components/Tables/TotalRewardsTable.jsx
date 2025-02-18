@@ -1,5 +1,5 @@
 import React from "react";
-import { CalLastThreeMonthsData } from "../../utility/commanFn/calculateRewardPoints";
+import { CalLastThreeMonthsData } from "../../utility/commanFunctions/calculateRewardPoints";
 
 const TotalRewardsTable = ({ transactions = [] }) => {
   const lastThreeMonthTransaction = CalLastThreeMonthsData(transactions);
