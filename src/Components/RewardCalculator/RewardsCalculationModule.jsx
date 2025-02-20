@@ -7,19 +7,23 @@ import TransactionTable from "../Tables/TransactionTable";
 import MonthlyRewardTable from "../Tables/MonthlyBasisReward";
 import TotalRewardsTable from "../Tables/TotalRewardsTable";
 import "./tables.css";
+import  { rewardLogger, rewardPointApiError } from "../../utility/logger/logger";
+
 
 const RewardsCalculationModule = () => {
   const [transactions, setTransactions] = useState([]);
   const [loading, setLoading] = useState(true);
-
+  const API_URL="/data/data.json"
   useEffect(() => {
     const fetchTransactionData = async () => {
       try {
         setLoading(true);
-        const data = await fetchTransactions("/data/data.json");
+        rewardLogger.info(`Fetching data from ${API_URL}`);
+        const data = await fetchTransactions(API_URL);
         setTransactions(data);
+        rewardLogger.info("Data received successfully:", data);
       } catch (err) {
-        console.log({ error: err });
+        rewardPointApiError(err, API_URL);
       } finally {
         setLoading(false);
       }
